@@ -14,20 +14,17 @@ form.addEventListener("submit", (e) => {
 
   if (!descricao || isNaN(valor)) return;
 
-  // cria objeto
   const gasto = {
     descricao,
     valor,
     categoria
   };
 
-  // salva no array
   gastos.push(gasto);
 
-  // soma total
+  
   total += valor;
 
-  // cria item na tela
   const li = document.createElement("li");
 
   li.innerHTML = `
@@ -36,7 +33,6 @@ form.addEventListener("submit", (e) => {
     <button class="remover">X</button>
   `;
 
-  // marca valor alto
   if (valor >= 100) {
     li.classList.add("alto-valor");
   }
