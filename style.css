@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #1e1e2f;
+  color: #e4e6eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  background: #2a2a40;
+  padding: 25px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #3b3b55;
+  background: #1e1e2f;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus, select:focus {
+  border-color: #6c8cff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(108, 140, 255, 0.3);
+}
+
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6c8cff, #4a6cff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(108, 140, 255, 0.4);
+}
+
+
+.total {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cfd3ff;
+}
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #24243a;
+  border: 1px solid #3a3a5a;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #2f2f4d;
+}
+
+
+.alto-valor {
+  background: #3a1f1f;
+  border-left: 5px solid #ff4d4d;
+}
+
+.gastos-box {
+  background: linear-gradient(135deg, #6c8cff, #4a6cff);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(108, 140, 255, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.gastos-box h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.gastos-box p {
+  font-size: 13px;
+  color: #dfe3ff;
+}
+
+/* animação leve */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

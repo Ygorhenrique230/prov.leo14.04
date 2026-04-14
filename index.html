@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Gastos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="gastos-box">
+      <h2>GASTOS MENSAIS</h2>
+      <p>Controle total de suas despesas</p>
+    </div>
+
+    <h1>Controle de gastos</h1>
+  
+    <form id="form-gasto">
+      <input type="text" id="descricao" placeholder="Descrição" required>
+      <input type="number" id="valor" placeholder="Valor" step="0.01" required>
+
+      <select id="categoria">
+        <option>Alimentação</option>
+        <option>Transporte</option>
+        <option>Lazer</option>
+      </select>
+
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h2 class="total">Total: R$ <span id="total">0.00</span></h2>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
